@@ -31,7 +31,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(168, 189, 181, 0.7);
             padding: 20px;
             border-radius: 10px;
             transition: background-color 0.3s;
@@ -59,10 +59,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -77,13 +77,47 @@
     </div>
 
     <section id="about">
-    <div class="container about-me-container" style="min-height: 80vh;">
+    <div class="container about-me-container" style="min-height: auto; margin-top: 3rem;">
         <div>
             <h2>About Me</h2>
             <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officia suscipit dolorum eligendi eius sit tempore in laborum? Dolorum ipsa rerum eum fugiat pariatur, culpa tenetur </p>
             <img src="trifun.jpg" style="border-radius: 60%; height: 250px;">
         </div>
     </div>
+    </section>
+    <section id="portfolio">
+        <div class="container portfolio-container text-center" style="margin-top: 3rem;">
+            <h2>Portfolio</h2>
+            <!-- Dodajte ovde sadržaj za portfolio -->
+        </div>
+    </section>
+
+    <div class="container text-center" style="margin-top: 1.5rem;">
+        <h3>Moji radovi</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur veritatis. Consequatur dignissimos earum deserunt fugiat exercitationem quas 
+            quasi repellat fugit eum autem? Incidunt molestiae dolorem minus voluptatem deleniti quidem voluptate natus ipsum illo! Saepe mollitia cum, 
+            deserunt impedit consectetur obcaecati error corrupti rerum ratione repellat vitae fuga, ipsam animi.</p>
+    </div>
+
+    <section id="contact">
+        <div class="container contact-container">
+            <h2>Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="kontakt" class="form-label"></label>
+                    <input type="text" class="form-control" id="kontakt" placeholder="Tvoje ime">
+                </div>
+                <div class="mb-3">
+                    <label for="kontakt" class="form-label"></label>
+                    <input type="email" class="form-control" id="kontakt" placeholder="Tvoj email">
+                </div>
+                <div class="mb-3">
+                    <label for="poruka" class="form-label"></label>
+                    <input type="poruka" class="form-control" id="poruka" placeholder="Unesi poruku">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
