@@ -7,32 +7,84 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Trifun Bigic</title>  
     <style>
-        .bgimg-1 {
-    background-image: url('https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1600');
-    min-height: 100vh;
-    max-height: 100vh;
-                }
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.7); /* Add a transparent background to the navbar */
+        }
+        .navbar-brand {
+            color: #333; /* Set the text color of the navbar brand */
+        }
+        .navbar-nav .nav-link {
+            color: #333; /* Set the text color of the navbar links */
+        }
+        .image-container {
+            position: relative;
+            height: 80vh;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .rectangular-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        .rectangular-box:hover {
+            background-color: #eee;
+        }
+        .about-me-container {
+            text-align: center;
+        }
     </style>  
 </head>
-<body class="bgimg-1">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Trifun</a>
-        
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item  ">
-                    <a class="nav-link d-flex justify-content-end " href="#">About</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item justify-content-end">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="ms-auto">
+                <a class="navbar-brand" href="#">Trifun</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="d-flex justify-content-center align-items-center">Trifun Bigic</div>
+
+    <div class="image-container">
+        <img src="https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Background Image">
+        <div class="rectangular-box">
+            <h1 class="text-dark">Trifun Bigic</h1>
+        </div>
+    </div>
+
+    <section id="about">
+    <div class="container about-me-container" style="min-height: 80vh;">
+        <div>
+            <h2>About Me</h2>
+            <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officia suscipit dolorum eligendi eius sit tempore in laborum? Dolorum ipsa rerum eum fugiat pariatur, culpa tenetur </p>
+            <img src="trifun.jpg" style="border-radius: 60%; height: 250px;">
+        </div>
+    </div>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
