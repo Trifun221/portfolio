@@ -60,13 +60,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#about">O meni</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -83,43 +83,63 @@
     <section id="about">
     <div class="container about-me-container" style="min-height: auto; margin-top: 3rem;">
         <div>
-            <h2>About Me</h2>
-            <p style="text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officia suscipit dolorum eligendi eius sit tempore in laborum? Dolorum ipsa rerum eum fugiat pariatur, culpa tenetur </p>
+            <h2>O meni</h2>
+            <p style="text-align: center;">Zdravo, ja sam Trifun Bigić. Bavim se web devolopmentom i grafičkim dizajnom,  znanje niju tu ali želja jeste. Takođe se bavim sportom u slobodno vreme.  </p>
             <img src="trifun.jpg" style="border-radius: 60%; height: 250px;">
         </div>
     </div>
     </section>
     <section id="portfolio">
-        <div class="container portfolio-container text-center" style="margin-top: 3rem;">
+        <div class="container portfolio-container text-center " style="margin-top: 3rem;">
             <h2>Portfolio</h2>
-            <!-- Dodajte ovde sadržaj za portfolio -->
+            <h4>Moji  radovi</h4>
+            
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="robot2.PNG" class="card-img-top" alt="slika">
+                        <div class="card-body">
+                            <h5 class="card-title">Logo</h5>
+                            <p class="card-text">Logo za firmu koja se bavi razvojom AI-a</p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="robot1.PNG" class="card-img-top" alt="slika">
+                        <div class="card-body">
+                            <h5 class="card-title">Logo</h5>
+                            <p class="card-text">Logo za firmu koja se bavi robotikom</p>
+                            <a href="#" class="btn btn-primary">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="container text-center" style="margin-top: 1.5rem;">
-        <h3>Moji radovi</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, tenetur veritatis. Consequatur dignissimos earum deserunt fugiat exercitationem quas 
-            quasi repellat fugit eum autem? Incidunt molestiae dolorem minus voluptatem deleniti quidem voluptate natus ipsum illo! Saepe mollitia cum, 
-            deserunt impedit consectetur obcaecati error corrupti rerum ratione repellat vitae fuga, ipsam animi.</p>
-    </div>
-
     <section id="contact">
         <div class="container contact-container">
-            <h2>Contact</h2>
+            <h2>Kontakt</h2>
             <form>
-                <div class="mb-3">
-                    <label for="kontakt" class="form-label"></label>
-                    <input type="text" class="form-control" id="kontakt" placeholder="Tvoje ime">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label"></label>
+                        <input type="text" class="form-control" id="name" placeholder="Vaše ime">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" placeholder="Vaš email">
+                    </div>
                 </div>
                 <div class="mb-3">
-                    <label for="kontakt" class="form-label"></label>
-                    <input type="email" class="form-control" id="kontakt" placeholder="Tvoj email">
+                    <label for="comment" class="form-label"></label>
+                    <textarea class="form-control" id="comment" rows="4" placeholder="Unesite Vaš komentar"></textarea>
                 </div>
-                <div class="mb-3">
-                    <label for="poruka" class="form-label"></label>
-                    <input type="poruka" class="form-control" id="poruka" placeholder="Unesi poruku">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Pošalji</button>
             </form>
         </div>
     </section>
